@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rila" translatesAutoresizingMaskIntoConstraints="NO" id="b2g-c0-p5S">
+                                <rect key="frame" x="26" y="171" width="300" height="214"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cyq-9n-eyV" appends="YES" id="Nrh-4V-X3T"/>
+                                    <outletCollection property="gestureRecognizers" destination="974-5s-BgE" appends="YES" id="svu-M2-LXo"/>
+                                    <outletCollection property="gestureRecognizers" destination="HpG-mG-N1S" appends="YES" id="SLM-cd-QQE"/>
+                                    <outletCollection property="gestureRecognizers" destination="mKY-7W-BIk" appends="YES" id="caX-6J-ULi"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9490196704864502" green="0.90980398654937744" blue="0.79607850313186646" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="cyq-9n-eyV">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="9AQ-J9-Wc2"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="VLz-Aq-uTh"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="974-5s-BgE">
+                    <connections>
+                        <action selector="handlePinch:" destination="vXZ-lx-hvc" id="oiu-iQ-JyM"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="0ty-WD-aBY"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="HpG-mG-N1S">
+                    <connections>
+                        <action selector="handleRotate:" destination="vXZ-lx-hvc" id="tng-JT-5V6"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="K6r-FI-Lao"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="mKY-7W-BIk">
+                    <connections>
+                        <action selector="handleLongPress:" destination="vXZ-lx-hvc" id="a4q-Nc-QTM"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rila" width="300" height="214"/>
+    </resources>
+</document>
