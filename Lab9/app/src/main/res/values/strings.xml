@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Lab9</string>
+    <string name="text_message">How are you feeling?</string>
+
+//Button
+    <string name="mood_button">Mood</string>
+//TextView
+    <string name="feeling"></string>
+//Spinner
+    <string-array name="moods">
+        <item>happy</item>
+        <item>sad</item>
+        <item>confused</item>
+        <item>angry</item>
+    </string-array>
+//EditText
+    <string name="name_edit">name</string>
+//Toggle Button
+    <string name="toggle_on">positive</string>
+    <string name="toggle_off">negative</string>
+//RadioGroup
+    <string name="yoga_text">Yoga</string>
+    <string name="yoga1_radio">Yin</string>
+    <string name="yoga2_radio">Bikram</string>
+//CheckBoxes
+    <string name="enlightened_check">enlightened</string>
+    <string name="secretive_check">secretive</string>
+//Switch
+    <string name="meditate_switch">Meditate</string>
+</resources>
