@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">咖啡</string>
+    <string name="title">Coffee Shop Finder</string>
+    <string name="coffee_type">Choose your crowd</string>
+    <string name="button">Find Coffee</string>
+    <string name="coffee_image">coffee</string>
+    <string-array name="crowd">
+        <item>cycling</item>
+        <item>college</item>
+        <item>popular</item>
+    </string-array>
+    <string name="suggested_coffee"></string>
+
+</resources>
