@@ -1,0 +1,38 @@
+<resources>
+//TextView1
+    <string name="app_name">MAD_final</string>
+    <string name="text_message">Build My Pizza</string>
+//Pizza Text
+    <string name="pizzaText"></string>
+//button
+    <string name="pizza_button">PIZZA</string>
+//Toggle Button
+    <string name="toggle_on">Red</string>
+    <string name="toggle_off">White</string>
+
+//Spinner
+    <string-array name="size">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+//Radio button
+    <string name="crust1">Thin</string>
+    <string name="crust2">Thick</string>
+
+//TextView2
+    <string name="crust_type">crust</string>
+//EditText
+    <string name="name_edit">Name</string>
+//Check Box
+    <string name="pepperoni_check">pepperoni</string>
+    <string name="onions_check">onions</string>
+    <string name="mushrooms_check">mushrooms</string>
+    <string name="sausage_check">sausage</string>
+//switch
+    <string name="gluten_switch">Gluten_free</string>
+
+</resources>
+
+
