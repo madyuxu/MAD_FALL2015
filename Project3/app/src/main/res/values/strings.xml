@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Project3</string>
+
+//spinner
+    <string-array name="birth_month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+//button
+    <string name="find_hero">Find Hero</string>
+
+    <string name="your_hero">Guess what! You are...</string>
+    <string name="you_are"></string>
+</resources>
